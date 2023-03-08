@@ -1,0 +1,31 @@
+Name: SimplerUni
+Courses: 3
+Rooms: 2
+Days: 1
+Periods_per_day: 3
+Curricula: 2
+Constraints: 6
+
+COURSES:
+c00 t0 1 1 30
+c01 t0 1 1 50
+c02 t1 1 1 50
+
+ROOMS:
+R0	50
+R1	30
+
+CURRICULA:
+q00  2 c00 c02
+q01  3 c00 c01 c02
+q03  1 c00 c01
+
+UNAVAILABILITY_CONSTRAINTS:
+c00 0 1
+c00 0 2
+c01 0 1
+c01 0 2
+c02 0 1
+c02 0 2
+
+END.

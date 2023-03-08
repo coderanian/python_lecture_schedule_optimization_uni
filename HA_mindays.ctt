@@ -1,0 +1,49 @@
+Name: HA_mindays
+Courses: 3
+Rooms: 3
+Days: 3
+Periods_per_day: 3
+Curricula: 3
+Constraints: 22
+
+COURSES:
+c0001 t000 1 1 130
+c0002 t001 3 3 75
+c0003 t002 1 1 117
+
+
+ROOMS:
+A	200
+B	200
+C	200
+
+CURRICULA:
+q000  1 c0001
+q001  1 c0002
+q002  1 c0003
+
+UNAVAILABILITY_CONSTRAINTS:
+c0001 0 1
+c0001 0 2
+c0001 1 0
+c0001 1 1
+c0001 1 2
+c0001 2 0
+c0001 2 1
+c0001 2 2
+c0002 1 0
+c0002 1 1
+c0002 1 2
+c0002 2 0
+c0002 2 1
+c0002 2 2
+c0003 0 1
+c0003 0 2
+c0003 1 0
+c0003 1 1
+c0003 1 2
+c0003 2 0
+c0003 2 1
+c0003 2 2
+
+END.

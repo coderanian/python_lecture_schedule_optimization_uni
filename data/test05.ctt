@@ -1,0 +1,31 @@
+Name: Should be infeasible
+Description: There is only one room that can hold more than 30 people, and we attempt to use it 7 times when there are only 6 time slots overall.
+Objective_value: None
+Note: If room constraints are not implemented, teh model will be feasible with an objective value of 33.3
+Courses: 4
+Rooms: 3
+Days: 2
+Periods_per_day: 3
+Curricula: 1
+Constraints: 3
+
+COURSES:
+c00 t0 6 2 30
+c01 t0 3 2 50
+c02 t1 3 2 50
+c03 t2 1 1 40
+
+ROOMS:
+R0	50
+R1	30
+R2	30
+
+CURRICULA:
+q01  2 c01 c00
+
+UNAVAILABILITY_CONSTRAINTS:
+c00 0 0
+c00 0 1
+c00 0 2
+
+END.

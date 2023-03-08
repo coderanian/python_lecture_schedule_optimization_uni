@@ -1,0 +1,27 @@
+Name: Should have two assistant penalties
+Description: t0 needs to hold every lecture (5 total), but there are only 3 slots in one day.
+Objective_value: 2
+Courses: 3
+Rooms: 3
+Days: 1
+Periods_per_day: 3
+Curricula: 2
+Constraints: 0
+
+COURSES:
+c00 t0 1 1 30
+c01 t0 2 1 50
+c02 t0 2 1 50
+
+ROOMS:
+R0	50
+R1	30
+R2	50
+
+CURRICULA:
+q00  2 c00 c02
+q01  2 c00 c01
+
+UNAVAILABILITY_CONSTRAINTS:
+
+END.

@@ -1,0 +1,27 @@
+Name: Should have two student penalties
+Description: Curriculum q00 contains all three lectures, so there is gonna be clashes there.
+Objective_value: 0.2
+Courses: 3
+Rooms: 3
+Days: 1
+Periods_per_day: 3
+Curricula: 2
+Constraints: 0
+
+COURSES:
+c00 t0 1 1 30
+c01 t0 2 1 50
+c02 t1 2 1 50
+
+ROOMS:
+R0	50
+R1	30
+R2	50
+
+CURRICULA:
+q00  3 c00 c01 c02
+q01  2 c01 c00
+
+UNAVAILABILITY_CONSTRAINTS:
+
+END.

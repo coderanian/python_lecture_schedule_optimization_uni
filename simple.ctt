@@ -1,0 +1,68 @@
+Name: SimpleUni
+Courses: 6
+Rooms: 3
+Days: 4
+Periods_per_day: 3
+Curricula: 4
+Constraints: 27
+
+
+COURSES:
+c00 t0 4 2 30
+c01 t0 3 2 40
+c02 t1 2 2 50
+c03 t2 2 2 60
+c04 t3 3 3 80
+c05 t4 2 2 100
+
+ROOMS:
+R0	40
+R1	60
+R2	100
+
+CURRICULA:
+q00  2 c00 c02
+q01  6 c00 c01 c02 c03 c04 c05
+q02  3 c01 c02 c05
+q03  3 c00 c03 c04
+
+UNAVAILABILITY_CONSTRAINTS:
+c00 0 1
+c00 0 2
+c00 1 1
+c00 1 2
+c00 2 2
+c00 3 0
+c00 3 2
+c01 0 1
+c01 0 2
+c01 1 1
+c01 2 1
+c01 2 2
+c01 3 0
+c01 3 2
+c02 0 1
+c02 0 2
+c02 1 1
+c02 2 2
+c02 3 0
+c02 3 2
+c03 0 1
+c03 1 1
+c03 1 2
+c03 3 2
+c04 0 1
+c04 0 2
+c04 1 2
+c04 2 2
+c04 3 0
+c04 3 2
+c05 0 1
+c05 0 2
+c05 1 1
+c05 2 1
+c05 2 2
+c05 3 1
+c05 3 2
+
+END.
